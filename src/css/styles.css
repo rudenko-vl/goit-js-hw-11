@@ -1,0 +1,144 @@
+/*  сбросы */
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+  margin: 0;
+  background-color: #f0ffff;
+}
+
+img {
+  display: block;
+  height: 300px;
+}
+
+.button.is-hidden {
+  display: none;
+}
+
+.button > .spinner.is-hidden {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(87, 87, 228);
+}
+.search-form__input {
+  display: inline-block;
+  width: 400px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.btn-form,
+.btn {
+  height: 30px;
+  width: 70px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: #ffffff;
+  cursor: pointer;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  transition-property: color, background-color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-form:hover {
+  background: #1bbde6;
+  color: white;
+}
+.button {
+  width: 100px;
+  display: block;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+}
+.button:hover {
+  background: #1bbde6;
+  color: white;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: black;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.photo-card {
+  outline: solid 1px black;
+  width: 300px;
+  border-radius: 4px;
+  overflow: hidden;
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.photo-card:hover {
+  transform: scale(1.05);
+}
+.img-link {
+  display: block;
+  margin-left: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.info-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.info-value {
+  display: block;
+}
